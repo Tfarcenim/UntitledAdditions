@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "tfar.untitledadditions.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "refmap": "untitledadditions.refmap.json",
+  "mixins": [
+    "CampfireBlockEntityMixin",
+    "ImpalingEnchantMixin",
+    "StoneCutterBlockMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.4"
+}
