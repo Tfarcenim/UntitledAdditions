@@ -21,12 +21,7 @@ public class StoneCutterBlockMixin extends Block {
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
         if (pEntity instanceof LivingEntity) {
             pEntity.makeStuckInBlock(pState, new Vec3(0.8F, 0.75D, 0.8F));
-            double d0 = Math.abs(pEntity.getX() - pEntity.xOld);
-            double d1 = Math.abs(pEntity.getZ() - pEntity.zOld);
-            if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
-                pEntity.hurt(pLevel.damageSources().thorns(null), 1.0F);
-            }
-
+            pEntity.hurt(pLevel.damageSources().thorns(null), 1.0F);
         }
     }
 }

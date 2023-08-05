@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "untitledadditions:spruce_planks_from_spruce_logs_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "spruce_logs": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:spruce_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "spruce_logs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "untitledadditions:spruce_planks_from_spruce_logs_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

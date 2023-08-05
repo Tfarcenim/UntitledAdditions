@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "untitledadditions:jungle_planks_from_jungle_logs_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "jungle_logs": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:jungle_logs"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "jungle_logs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "untitledadditions:jungle_planks_from_jungle_logs_stonecutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}
